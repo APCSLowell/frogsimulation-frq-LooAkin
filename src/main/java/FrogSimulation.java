@@ -34,6 +34,7 @@ public class FrogSimulation
 		while(numSims < num){
 			if(simulate() == true)
 				wins++;
+			numSims++;
 		}
 		return wins;
 	}
