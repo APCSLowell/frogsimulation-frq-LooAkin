@@ -30,14 +30,14 @@ public class FrogSimulation
 	
 	public double runSimulations(int num)
 	{ 
-		double wins = 0;
+		int wins = 0;
 		int numSims = 0;
 		while(numSims < num){
 			if(simulate() == true)
 				wins++;
 			numSims++;
 		}
-		return wins;
+		return (double) wins/num;
 	}
 	
 	
